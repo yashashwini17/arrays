@@ -1,0 +1,11 @@
+class Solution(object):
+    def furthestDistanceFromOrigin(self, moves):
+        m=moves.count('L')
+        n=moves.count('R')
+        r=moves.count('_')
+        res=0
+        if(m>n):
+            res=m-n+r
+        else:
+            res=n-m+r
+        return res
